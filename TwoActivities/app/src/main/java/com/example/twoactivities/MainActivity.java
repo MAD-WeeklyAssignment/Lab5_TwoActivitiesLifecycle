@@ -40,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState != null) {
             boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+
+            if (isVisible) {
+                mReplyHeadTextView.setVisibility(View.VISIBLE);
+                mReplyTextView.setText(savedInstanceState
+                        .getString("reply_text"));
+                mReplyTextView.setVisibility(View.VISIBLE);
+            }
         }
     }
 
