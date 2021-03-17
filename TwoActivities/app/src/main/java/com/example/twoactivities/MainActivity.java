@@ -1,5 +1,6 @@
 package com.example.twoactivities;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         mMessageEditText = findViewById(R.id.editText_main);
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
         mReplyTextView = findViewById(R.id.text_message_reply);
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
     }
 
     public void launchSecondActivity(View view) {
