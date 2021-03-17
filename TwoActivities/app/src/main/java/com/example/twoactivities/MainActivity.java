@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String LOG_TAG=MainActivity.class.getSimpleName();
-    public static final String EXTRA_MESSAGE ="com.example.android.twoactivities.extra.MESSAGE";
+    private static final String LOG_TAG = MainActivity.class.getSimpleName();
+    public static final String EXTRA_MESSAGE = "com.example.android.twoactivities.extra.MESSAGE";
     private EditText mMessageEditText;
     public static final int TEXT_REQUEST = 1;
     private TextView mReplyHeadTextView;
@@ -31,11 +31,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d(LOG_TAG,"------------");
-        Log.d(LOG_TAG,"onCreate");
+        Log.d(LOG_TAG, "------------");
+        Log.d(LOG_TAG, "onCreate");
+
         mMessageEditText = findViewById(R.id.editText_main);
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
         mReplyTextView = findViewById(R.id.text_message_reply);
+
+        if (savedInstanceState != null) {
+            boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+        }
     }
 
     @Override
@@ -44,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (mReplyHeadTextView.getVisibility() == View.VISIBLE) {
             outState.putBoolean("reply_visible", true);
-            outState.putString("reply_text",mReplyTextView.getText().toString());
+            outState.putString("reply_text", mReplyTextView.getText().toString());
         }
     }
 
