@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (mReplyHeadTextView.getVisibility() == View.VISIBLE) {
             outState.putBoolean("reply_visible", true);
-           
+            outState.putString("reply_text",mReplyTextView.getText().toString());
         }
     }
 
