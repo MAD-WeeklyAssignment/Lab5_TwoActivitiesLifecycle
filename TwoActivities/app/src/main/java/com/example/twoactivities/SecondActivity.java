@@ -17,7 +17,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_shopping_item);
         mReply = findViewById(R.id.editText_second);
         Intent intent =getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
