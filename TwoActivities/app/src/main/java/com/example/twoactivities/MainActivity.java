@@ -89,5 +89,11 @@ public class MainActivity extends AppCompatActivity {
         return null;
     }
 
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
 
+        outState.putStringArray("shoppingListArray", shoppingListArray);
+        outState.putInt("currentShoppingListRow", currentShoppingListRow);
+    }
 }
