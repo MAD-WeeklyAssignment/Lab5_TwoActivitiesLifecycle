@@ -4,53 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".ShoppingItem">
 
-    <TextView
-        android:id="@+id/text_header"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/shopping_item"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/small_margin"
-        android:layout_marginLeft="@dimen/small_margin"
-        android:layout_marginTop="@dimen/medium_margin"
-        android:text="@string/text_header"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text_message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/small_margin"
-        android:layout_marginLeft="@dimen/small_margin"
-        android:layout_marginTop="@dimen/small_margin"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_header" />
-
-    <Button
-        android:id="@+id/button_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/medium_margin"
-        android:layout_marginRight="@dimen/medium_margin"
-        android:text="@string/button_second"
-        android:onClick="returnReply"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/editText_second"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/medium_margin"
-        android:layout_marginEnd="@dimen/small_margin"
-        android:layout_marginStart="@dimen/small_margin"
-        android:ems="10"
-        android:hint="@string/editText_second"
-        android:inputType="textLongMessage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_second"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/item_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/rice" />
+
+        <Button
+            android:id="@+id/item_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/daal" />
+
+        <Button
+            android:id="@+id/item_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/sugar" />
+
+        <Button
+            android:id="@+id/item_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/salt" />
+
+        <Button
+            android:id="@+id/item_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/cooking_oil" />
+
+        <Button
+            android:id="@+id/item_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/onion" />
+
+        <Button
+            android:id="@+id/item_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/banana" />
+
+        <Button
+            android:id="@+id/item_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/apple" />
+
+        <Button
+            android:id="@+id/item_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/cheese" />
+
+        <Button
+            android:id="@+id/item_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addItemToShoppingList"
+            android:text="@string/coffee" />
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

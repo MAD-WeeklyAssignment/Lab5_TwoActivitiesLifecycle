@@ -1,4 +1,4 @@
-package com.example.activityLifeCycleAndState;
+package com.example.twoactivities;
 
 import android.content.Intent;
 import android.os.Bundle;

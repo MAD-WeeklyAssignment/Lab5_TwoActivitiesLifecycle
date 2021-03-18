@@ -4,90 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShoppingItem">
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/shopping_item"
+        android:id="@+id/shopping_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/item_1"
+        <TextView
+            android:id="@+id/list_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/rice" />
+            android:padding="10dp" />
 
-        <Button
-            android:id="@+id/item_2"
+        <TextView
+            android:id="@+id/list_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/daal" />
+            android:padding="10dp" />
 
-        <Button
-            android:id="@+id/item_3"
+        <TextView
+            android:id="@+id/list_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/sugar" />
+            android:padding="10dp" />
 
-        <Button
-            android:id="@+id/item_4"
+        <TextView
+            android:id="@+id/list_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/salt" />
+            android:padding="10dp" />
 
-        <Button
-            android:id="@+id/item_5"
+        <TextView
+            android:id="@+id/list_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/cooking_oil" />
+            android:padding="10dp" />
 
-        <Button
-            android:id="@+id/item_6"
+        <TextView
+            android:id="@+id/list_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/onion" />
+            android:padding="10dp" />
 
-        <Button
-            android:id="@+id/item_7"
+        <TextView
+            android:id="@+id/list_7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/banana" />
+            android:padding="10dp" />
 
-        <Button
-            android:id="@+id/item_8"
+        <TextView
+            android:id="@+id/list_8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/apple" />
+            android:padding="10dp" />
 
-        <Button
-            android:id="@+id/item_9"
+        <TextView
+            android:id="@+id/list_9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/cheese" />
+            android:padding="10dp" />
 
-        <Button
-            android:id="@+id/item_10"
+        <TextView
+            android:id="@+id/list_10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addItemToShoppingList"
-            android:text="@string/coffee" />
-
+            android:padding="10dp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="addItem"
+        android:text="@string/add_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopping_list" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
