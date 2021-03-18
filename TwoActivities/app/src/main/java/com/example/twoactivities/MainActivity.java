@@ -62,7 +62,32 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-   
+    private TextView getCurrentShoppingListTxtView(int currentShoppingListRow) {
+        switch (currentShoppingListRow) {
+            case 0:
+                return findViewById(R.id.list_1);
+            case 1:
+                return findViewById(R.id.list_2);
+            case 2:
+                return findViewById(R.id.list_3);
+            case 3:
+                return findViewById(R.id.list_4);
+            case 4:
+                return findViewById(R.id.list_5);
+            case 5:
+                return findViewById(R.id.list_6);
+            case 6:
+                return findViewById(R.id.list_7);
+            case 7:
+                return findViewById(R.id.list_8);
+            case 8:
+                return findViewById(R.id.list_9);
+            case 9:
+                return findViewById(R.id.list_10);
+        }
+
+        return null;
+    }
 
 
 }
