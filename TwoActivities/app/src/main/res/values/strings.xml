@@ -1,18 +1,7 @@
 <resources>
-    <string name="app_name">Shopping List</string>
-
-    <string name="activity2_name">Second Activity</string>
-    <string name="text_header">Text header</string>
-    <string name="add_item">Add Item</string>
-    <string name="rice">Rice</string>
-    <string name="daal">Daal</string>
-    <string name="sugar">Sugar</string>
-    <string name="salt">Salt</string>
-    <string name="cooking_oil">Cooking Oil</string>
-    <string name="onion">Onion</string>
-    <string name="banana">Banana</string>
-    <string name="apple">Apple</string>
-    <string name="cheese">Cheese</string>
-    <string name="coffee">Coffee</string>
+    <string name="app_name">Activity LifeCycle And State</string>
+    <string name="button_count">Count</string>
+    <string name="editText">Enter Your Message Here</string>
+    <string name="initial_count">0</string>
 
 </resources>
